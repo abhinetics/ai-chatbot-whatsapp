@@ -1,47 +1,34 @@
-# OpenAI + Whatsapp = AI Assistant 🚀
+# 🤖 Gemini WhatsApp AI Bot
 
-This project is a whatsapp bot that uses OpenAI's APIs to respond to user inputs.
-This is a fork from https://github.com/navopw/whatsapp-chatgpt
+A 100% free, Node.js-based **WhatsApp chatbot** powered by **Google Gemini 2.5 Flash** — capable of chatting naturally, generating AI images, and running 24×7 from your PC or cloud server.
 
-To use ChatGPT, simply type `gpt` followed by your prompt, and the bot will generate a response.
-To use DALL-E, simply type `dalle` followed by your prompt, and the bot will generate an image response.
+---
 
-## Requirements
+## 🚀 Features
 
-- Node.js
-- A recent version of npm
-- An OpenAI Account
+- 💬 **Real-time AI Chat:** Replies instantly to any message on WhatsApp (no prefixes needed).  
+- 🧠 **Powered by Gemini 2.5 Flash:** Fast, smart, and multimodal — understands natural language.  
+- 🖼️ **AI Image Generation:** Ask it to *"draw"*, *"generate an image"*, or *"make a picture"* — it sends an AI-generated image.  
+- 🪶 **Lightweight & Free:** Uses Google’s free Gemini API (student/pro or developer tier).  
+- 🔐 **Private:** Runs locally using WhatsApp Web automation (no data shared to third parties).  
+- ⚡ **Cross-platform:** Works on Windows, macOS, Linux, and Android (via Termux).  
 
-## .env File example
+---
 
-```
-OPENAI_API_KEY=put_your_key_here
-PREFIX_ENABLED=false
-PREFIX_GPT=gpt
-PREFIX_DALLE=dalle
-```
+## 🧩 Tech Stack
 
-## Installation
+| Component | Technology |
+|------------|-------------|
+| AI Model | **Gemini 2.5 Flash** (Google Generative AI API) |
+| Chat Platform | **WhatsApp Web Automation** via `whatsapp-web.js` |
+| Language | **Node.js (ESM)** |
+| Hosting Options | Local PC / Oracle Cloud Free VM / Termux |
 
-1. Clone this repository
-2. Install the required packages by running `npm install`
-3. Put your OpenAI API Key into the .env File (`OPENAI_API_KEY`)
-    - You can obtain an API Key here: [**OpenAI API Keys**](https://platform.openai.com/account/api-keys)
-4. Run the bot using `npm run start`
-5. Scan the QR Code with Whatsapp (Link a device)
-6. Now you're ready to go, people can send you messages and the bot will respond to them.
+---
 
-## Usage
+## 🛠️ Setup Instructions
 
-To use the bot, simply send a message with `gpt` command followed by your prompt. For example:
-
-`gpt What is the meaning of life?`
-
-The bot only responds to messages that are received by you, not sent.
-
-You can disable the `gpt` prefix by setting `PREFIX_ENABLED` to `false` in the .env file.
-
-## Used libraries
-- https://github.com/pedroslopez/whatsapp-web.js
-- https://github.com/transitive-bullshit/chatgpt-api
-# ai-chatbot-whatsapp
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/gemini-whatsapp-ai.git
+cd gemini-whatsapp-ai
